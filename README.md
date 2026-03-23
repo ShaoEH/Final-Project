@@ -2,7 +2,7 @@
 
 A professional, responsive, and accessible multi-page web platform designed to showcase a fusion of traditional and digital artwork. This project demonstrates mastery of modern web development principles, including semantic HTML5, advanced CSS layouts, client-side interactivity, and rigorous accessibility standards.
 
-**Author:** Shao En Hung (Aden)
+**Author:** Shao En Hung
 
 ## 🚀 Setup & Execution Instructions
 
