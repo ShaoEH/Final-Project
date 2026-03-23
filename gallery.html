@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Muse & Medium Art Gallery</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to Content</a>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="logo"><h2>Muse & Medium</h2></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main" class="container">
+        <h1 class="section-title">Art Catalog</h1>
+
+        <div class="gallery-controls">
+            <div class="search-bar">
+                <label for="search-input" class="sr-only">Search artworks</label>
+                <input type="search" id="search-input" placeholder="Search by title or medium...">
+            </div>
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Works</button>
+                <button class="filter-btn" data-filter="oil">Oil on Canvas</button>
+                <button class="filter-btn" data-filter="digital">Digital Art</button>
+                <button class="filter-btn" data-filter="watercolor">Watercolor</button>
+            </div>
+        </div>
+
+        <div class="art-grid" id="gallery-grid">
+            <figure class="art-card">
+                <img src="images/Serenity.png" srcset="images/Serenity.png 1000w, images/Serenity_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Serenity" loading="lazy">
+                <figcaption>
+                    <h3>Serenity</h3>
+                    <p>Oil on Canvas</p>
+                </figcaption>
+            </figure>
+            <figure class="art-card">
+                <img src="images/Cyber_Pulse.png" srcset="images/Cyber_Pulse.png 1000w, images/Cyber_Pulse_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Cyber Pulse" loading="lazy">
+                <figcaption>
+                    <h3>Cyber Pulse</h3>
+                    <p>Digital Art</p>
+                </figcaption>
+            </figure>
+            </div>
+    </main>
+
+    <div id="artModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
+            <img id="modalImg" src="" alt="">
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+                <span id="modalMedium"></span>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Muse & Medium Art Gallery.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

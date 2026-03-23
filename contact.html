@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Muse & Medium</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to Content</a>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="logo"><h2>Muse & Medium</h2></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main" class="container">
+        <h1 class="section-title">Inquiry & Contact</h1>
+
+        <div class="contact-wrapper">
+            <section class="contact-info-card">
+                <h3>Commission Pricing</h3>
+                <div class="price-item"><span>Small (8x10")</span><strong>Starting at $250</strong></div>
+                <div class="price-item"><span>Medium (16x20")</span><strong>Starting at $500</strong></div>
+                <div class="price-item"><span>Digital Art</span><strong>Quotes per project</strong></div>
+                <p class="note">* Prices vary based on complexity and detail.</p>
+            </section>
+
+            <section class="contact-form-card">
+                <h3>Send an Inquiry</h3>
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Inquiry *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..." aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn btn active">Submit Inquiry</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muse & Medium Art Gallery.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

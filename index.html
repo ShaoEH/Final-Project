@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Muse & Medium Art Gallery</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to Content</a>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="logo">
+                <h2>Muse & Medium</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section class="hero">
+            <h1>Muse & Medium Art Gallery</h1>
+            <p>A contemporary fusion of traditional and digital media.</p>
+            <a href="gallery.html" class="btn active">Explore Gallery</a>
+        </section>
+        <section class="container">
+            <h2 class="section-title">Featured Works</h2>
+            <div class="art-grid">
+                <figure class="art-card" tabindex="0"
+                    onclick="openModal('images/Serenity.png', 'Serenity', 'Oil on Canvas', 'A study of classical floral arrangements contrasted with modern dark shadows.')"
+                    onkeydown="if(event.key === 'Enter') openModal('images/Serenity.png', 'Serenity', 'Oil on Canvas', 'A study of classical floral arrangements contrasted with modern dark shadows.')">
+                    <img src="images/Serenity.png" srcset="images/Serenity.png 1000w, images/Serenity_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Serenity" loading="lazy">
+                    <figcaption>
+                        <h3>Serenity</h3>
+                        <p>Oil on Canvas</p>
+                    </figcaption>
+                </figure>
+                <figure class="art-card" tabindex="0"
+                    onclick="openModal('images/Golden_Fields.png', 'Golden Fields', 'Oil on Canvas', 'Capturing the radiant light of a meadow during the golden hour.')"
+                    onkeydown="if(event.key === 'Enter') openModal('images/Golden_Fields.png', 'Golden Fields', 'Oil on Canvas', 'Capturing the radiant light of a meadow during the golden hour.')">
+                    <img src="images/Golden_Fields.png" srcset="images/Golden_Fields.png 1000w, images/Golden_Fields_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Golden Fields" loading="lazy">
+                    <figcaption>
+                        <h3>Golden Fields</h3>
+                        <p>Oil on Canvas</p>
+                    </figcaption>
+                </figure>
+                <figure class="art-card" tabindex="0"
+                    onclick="openModal('images/Midnight_Bloom.png', 'Midnight Bloom', 'Oil on Canvas', 'Mysterious blossoms emerging from the depths of a starlit night.')"
+                    onkeydown="if(event.key === 'Enter') openModal('images/Midnight_Bloom.png', 'Midnight Bloom', 'Oil on Canvas', 'Mysterious blossoms emerging from the depths of a starlit night.')">
+                    <img src="images/Midnight_Bloom.png" srcset="images/Midnight_Bloom.png 1000w, images/Midnight_Bloom_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Midnight Bloom" loading="lazy">
+                    <figcaption>
+                        <h3>Midnight Bloom</h3>
+                        <p>Oil on Canvas</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="art-card" tabindex="0"
+                    onclick="openModal('images/Cyber_Pulse.png', 'Cyber Pulse', 'Digital Art', 'Visualizing the rhythmic energy found within digital currents.')"
+                    onkeydown="if(event.key === 'Enter') openModal('images/Cyber_Pulse.png', 'Cyber Pulse', 'Digital Art', 'Visualizing the rhythmic energy found within digital currents.')">
+                    <img src="images/Cyber_Pulse.png" srcset="images/Cyber_Pulse.png 1000w, images/Cyber_Pulse_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Cyber Pulse" loading="lazy">
+                    <figcaption>
+                        <h3>Cyber Pulse</h3>
+                        <p>Digital Art</p>
+                    </figcaption>
+                </figure>
+                <figure class="art-card" tabindex="0"
+                    onclick="openModal('images/Neon_Dreams.png', 'Neon Dreams', 'Digital Art', 'An intersection of vibrant hues and overlapping virtual planes.')"
+                    onkeydown="if(event.key === 'Enter') openModal('images/Neon_Dreams.png', 'Neon Dreams', 'Digital Art', 'An intersection of vibrant hues and overlapping virtual planes.')">
+                    <img src="images/Neon_Dreams.png" srcset="images/Neon_Dreams.png 1000w, images/Neon_Dreams_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Neon Dreams" loading="lazy">
+                    <figcaption>
+                        <h3>Neon Dreams</h3>
+                        <p>Digital Art</p>
+                    </figcaption>
+                </figure>
+                <figure class="art-card" tabindex="0"
+                    onclick="openModal('images/Pixel_Horizon.png', 'Pixel Horizon', 'Digital Art', 'A futuristic horizon rendered through a stylized pixelated lens.')"
+                    onkeydown="if(event.key === 'Enter') openModal('images/Pixel_Horizon.png', 'Pixel Horizon', 'Digital Art', 'A futuristic horizon rendered through a stylized pixelated lens.')">
+                    <img src="images/Pixel_Horizon.png" srcset="images/Pixel_Horizon.png 1000w, images/Pixel_Horizon_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Pixel Horizon" loading="lazy">
+                    <figcaption>
+                        <h3>Pixel Horizon</h3>
+                        <p>Digital Art</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="art-card" tabindex="0"
+                    onclick="openModal('images/Azure_Mist.png', 'Azure Mist', 'Watercolor', 'depicting a tranquil lake enveloped in early morning fog.')"
+                    onkeydown="if(event.key === 'Enter') openModal('images/Azure_Mist.png', 'Azure Mist', 'Watercolor', 'depicting a tranquil lake enveloped in early morning fog.')">
+                    <img src="images/Azure_Mist.png" srcset="images/Azure_Mist.png 1000w, images/Azure_Mist_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Azure Mist" loading="lazy">
+                    <figcaption>
+                        <h3>Azure Mist</h3>
+                        <p>Watercolor</p>
+                    </figcaption>
+                </figure>
+                <figure class="art-card" tabindex="0"
+                    onclick="openModal('images/Spring_Petals.png', 'Spring Petals', 'Watercolor', 'Capturing the delicate transparency of cherry blossoms in spring.')"
+                    onkeydown="if(event.key === 'Enter') openModal('images/Spring_Petals.png', 'Spring Petals', 'Watercolor', 'Capturing the delicate transparency of cherry blossoms in spring.')">
+                    <img src="images/Spring_Petals.png" srcset="images/Spring_Petals.png 1000w, images/Spring_Petals_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Spring Petals" loading="lazy">
+                    <figcaption>
+                        <h3>Spring Petals</h3>
+                        <p>Watercolor</p>
+                    </figcaption>
+                </figure>
+                <figure class="art-card" tabindex="0"
+                    onclick="openModal('images/Rainy_Street.png', 'Rainy Street', 'Watercolor', 'Reflections and soft light on a city street after a rain shower.')"
+                    onkeydown="if(event.key === 'Enter') openModal('images/Rainy_Street.png', 'Rainy Street', 'Watercolor', 'Reflections and soft light on a city street after a rain shower.')">
+                    <img src="images/Rainy_Street.png" srcset="images/Rainy_Street.png 1000w, images/Rainy_Street_small.png 500w" sizes="(max-width: 600px) 100vw, 33vw" alt="Rainy Street" loading="lazy">
+                    <figcaption>
+                        <h3>Rainy Street</h3>
+                        <p>Watercolor</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <div id="artModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()" aria-label="Close modal">&times;</button>
+            <img id="modalImg" src="" alt="">
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+                <span id="modalMedium"></span>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Muse & Medium Art Gallery.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
